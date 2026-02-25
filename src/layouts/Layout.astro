@@ -29,35 +29,42 @@ interface Props {
       <slot />
     </main>
     <footer>
-      <div>
-        <a
-          href="https://bsky.app/profile/ext4cats.memoryconflux.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Visit my Bluesky"
-          aria-label="Visit my Bluesky"
-          ><Bluesky
-            width="32"
-            height="32"
-            stroke-width="1"
-            aria-hidden="true"
-          /></a
-        >
-        <a
-          href="https://github.com/ext4cats"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Visit my Github"
-          aria-label="Visit my Github"
-          ><Github
-            width="32"
-            height="32"
-            stroke-width="1"
-            aria-hidden="true"
-          /></a
-        >
-      </div>
-      <p>Home, home again. I like to be here, when I can.</p>
+      <ul class="socials">
+        <li>
+          <a
+            href="https://bsky.app/profile/ext4cats.memoryconflux.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Bluesky
+              width="32"
+              height="32"
+              stroke-width="1"
+              role="img"
+              aria-label="Visit my Bluesky"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/ext4cats"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github
+              width="32"
+              height="32"
+              stroke-width="1"
+              role="img"
+              aria-label="Visit my Github"
+            />
+          </a>
+        </li>
+      </ul>
+      <p>
+        "It encodes a short hymn that was popular among the inhabitants of my
+        city."
+      </p>
       <p>
         Hosted with love by <a
           href="https://ext4cats.memoryconflux.com"
