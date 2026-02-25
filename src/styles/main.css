@@ -1,0 +1,40 @@
+/* General styles */
+
+body {
+  font-family: sans-serif;
+  background-color: hsl(12, 12%, 8%);
+  color: hsl(12, 18%, 58%);
+}
+
+a {
+  color: inherit;
+}
+
+/* Layout */
+
+header,
+main,
+footer {
+  max-width: 85ch;
+  padding-inline: 3em;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 3em;
+}
+
+main p {
+  margin-block: 1em;
+}
+
+footer {
+  color: hsl(12, 12%, 24%);
+  font-style: italic;
+}
+
+footer div {
+  margin-block: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}

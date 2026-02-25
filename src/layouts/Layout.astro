@@ -1,23 +1,70 @@
+---
+import '../styles/reset.css';
+import '../styles/main.css';
+import Bluesky from '../assets/bluesky.svg';
+import Github from '../assets/github.svg';
+
+const { title } = Astro.props;
+
+interface Props {
+  readonly title: string;
+}
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <title>memoryconflux.com</title>
+  </head>
+  <body>
+    <header>
+      <h1>{title}</h1>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <div>
+        <a
+          href="https://bsky.app/profile/ext4cats.memoryconflux.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Visit my Bluesky"
+          aria-label="Visit my Bluesky"
+          ><Bluesky
+            width="32"
+            height="32"
+            stroke-width="1"
+            aria-hidden="true"
+          /></a
+        >
+        <a
+          href="https://github.com/ext4cats"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Visit my Github"
+          aria-label="Visit my Github"
+          ><Github
+            width="32"
+            height="32"
+            stroke-width="1"
+            aria-hidden="true"
+          /></a
+        >
+      </div>
+      <p>Home, home again. I like to be here, when I can.</p>
+      <p>
+        Hosted with love by <a
+          href="https://ext4cats.memoryconflux.com"
+          target="_blank"
+          rel="noopener noreferrer">ext4cats</a
+        >.
+      </p>
+    </footer>
+  </body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
