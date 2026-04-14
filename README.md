@@ -1,6 +1,6 @@
 # memoryconflux
 
-Landing page for [memoryconflux.com](https://memoryconflux.com), my personal website.
+💽 Landing page for [memoryconflux.com](https://memoryconflux.com), my personal website.
 
 ## Building
 
@@ -10,6 +10,6 @@ This is a vanilla Astro project, no fancy dials to turn. You'll need a working i
 # Install dependencies
 pnpm i
 
-# Build the final page
+# Build the website
 pnpm build
 ```
